@@ -1,0 +1,23 @@
+{
+  "name": "ntask-api",
+  "version": "1.0.0",
+  "description": "API for tasks management",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "build": "babel index.js -d dist"
+  },
+  "author": "Rafael de Souza Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "~6.26.0",
+    "babel-preset-env": "~1.6.0"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.1",
+    "consign": "~0.1.6",
+    "express": "~4.15.4",
+    "sequelize": "~4.8.4",
+    "sqlite3": "^3.1.11"
+  }
+}
