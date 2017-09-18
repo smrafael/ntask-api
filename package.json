@@ -14,10 +14,14 @@
     "babel-preset-env": "~1.6.0"
   },
   "dependencies": {
+    "bcrypt": "~1.0.3",
     "body-parser": "~1.18.1",
     "consign": "~0.1.6",
     "express": "~4.15.4",
+    "jwt-simple": "~0.5.1",
+    "passport": "~0.4.0",
+    "passport-jwt": "~3.0.0",
     "sequelize": "~4.8.4",
-    "sqlite3": "^3.1.11"
+    "sqlite3": "~3.1.11"
   }
 }
