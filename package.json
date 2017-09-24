@@ -4,13 +4,21 @@
   "description": "API for tasks management",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "npm run apidoc && babel-node index.js",
     "build": "babel index.js -d dist",
+    "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "NODE_ENV=test mocha test/**/*.js"
+  },
+  "apidoc": {
+    "name": "Documentação - Node Task API",
+    "template": {
+      "forceLanguage": "pt_br"
+    }
   },
   "author": "Rafael de Souza Mendes",
   "license": "ISC",
   "devDependencies": {
+    "apidoc": "~0.17.6",
     "babel-cli": "~6.26.0",
     "babel-preset-env": "~1.6.0",
     "babel-register": "~6.26.0",
