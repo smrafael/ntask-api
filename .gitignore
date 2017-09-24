@@ -1,6 +1,7 @@
 dist/
 node_modules/
 npm-debug.log
-ntask.sqlite
+*.sqlite
 package-lock.json
 public/apidoc/
+logs/
