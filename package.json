@@ -4,9 +4,10 @@
   "description": "API for tasks management",
   "main": "index.js",
   "scripts": {
-    "start": "npm run apidoc && babel-node index.js",
+    "start": "npm run apidoc && npm run clusters",
     "build": "babel index.js -d dist",
     "apidoc": "apidoc -i routes/ -o public/apidoc",
+    "clusters": "babel-node clusters.js",
     "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "apidoc": {
@@ -29,12 +30,17 @@
   "dependencies": {
     "bcrypt": "~1.0.3",
     "body-parser": "~1.18.1",
+    "compression": "^1.7.0",
     "consign": "~0.1.6",
+    "cors": "^2.8.4",
     "express": "~4.15.4",
+    "helmet": "^3.8.1",
     "jwt-simple": "~0.5.1",
+    "morgan": "^1.8.2",
     "passport": "~0.4.0",
     "passport-jwt": "~3.0.0",
     "sequelize": "~4.8.4",
-    "sqlite3": "~3.1.11"
+    "sqlite3": "~3.1.11",
+    "winston": "^2.3.1"
   }
 }
